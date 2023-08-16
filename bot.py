@@ -19,6 +19,11 @@ async def on_ready():
 async def test(ctx, arg):
     await ctx.send(arg)
 
+@bot.command()
+async def mute(ctx, arg){
+    await ctx.send(arg, + "has been muted!")
+}
+
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
