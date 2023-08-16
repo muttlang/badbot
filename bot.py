@@ -21,7 +21,7 @@ async def test(ctx, arg):
 
 @bot.command()
 async def mute(ctx, arg):
-    await ctx.send(arg, + "has been muted!")
+    await ctx.send(arg + "has been muted!")
 
 
 @bot.event
